@@ -1,3 +1,24 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  width: 700px;
+  margin: auto;
+}
+
+.blog {
+  width: 700px;
+  margin: auto;
+}
+
+.comment {
+  background: #ccc;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.reply {
+  border: 2px solid #666;
+  margin-left: 40px;
+  padding: 10px;
+}
