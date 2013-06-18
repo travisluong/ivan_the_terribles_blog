@@ -82,6 +82,7 @@ class PostsController < ApplicationController
   end
 
   def comments
-    @post = Post.find(params[:id])
+    # using includes to fix N + 1 query problem
+    @post = Post.includes(comments: :replies).find(params[:id])
   end
 end
